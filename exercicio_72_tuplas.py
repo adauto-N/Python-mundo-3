@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
             if (continuar == 'N') or ( continuar == 'NAO') or (continuar == 'NÃO'):
                 open = False
-                break # interrompe a iteração
+                break # interrompe a iteração do while
         
         # Lógica do problema
 
