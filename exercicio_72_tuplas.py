@@ -5,19 +5,7 @@ Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por 
 
 if __name__ == "__main__":
 
-    open = True
-    i = 0
-
-    while open:
-
-        # Lógica de quebra do loop
-
-        if i > 0: # depois da primeira iteração
-            continuar = input('Deseja continuar ? y/n ').strip().upper()
-
-            if (continuar == 'N') or ( continuar == 'NAO') or (continuar == 'NÃO'):
-                open = False
-                break # interrompe a iteração do while
+    while True:
         
         # Lógica do problema
 
@@ -38,4 +26,7 @@ if __name__ == "__main__":
         else:
            print('Número fora do intervalo.')
         
-        i += 1
+        continuar = input('Deseja continuar ? y/n ').strip().upper()
+
+        if continuar in ['N', 'NAO', 'NO', 'NÃO']:
+            break # interrompe a iteração do while
